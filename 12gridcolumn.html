@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<title>12 grid column</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+			}
+			.parent{
+				marginL 0 auto;
+				max-width: 1920px;
+				display: grid;
+				grid-gap: 1px;
+				grid-template-columns: repeat(12,1fr);
+				grid-auto-rows: minmax(50px,auto);
+				background-color: #CCD1E4;
+			}
+			
+			.parent>div{
+				background-color: #FE7E6D;
+				padding: 10px;
+			}
+			
+			.banner{
+				grid-column: 1/13;
+				grid-row: 1/3;
+				background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYL6nIvJP72d-YQO2iUXcwZfh8875iKYUyTg&usqp=CAU");
+				background-size:cover;
+				font-family: monotype corsiva;
+				font-size: 50px;
+				letter-spacing: 10px;
+				color: white;
+				text-align: center;
+				
+			}
+			.subheader1{
+				grid-column:1/4
+			}
+			
+			.subheader2{
+				grid-column:4/7
+			}
+			
+			.subheader3{
+				grid-column:7/10
+			}
+			
+			.subheader4{
+				grid-column:10/13;
+			}
+			
+			.menu{
+				grid-column: 1/4;
+				grid-row: 4/10;
+			}
+			
+			.content{
+				grid-column: 4/13;
+				grid-row: 4/10;
+				text-align: justify;
+			}
+			
+			.footer{
+				grid-column: 1/13;
+			}
+			
+			a{
+				font-family: monotype corsiva;
+				font-size: 25px;
+				letter-spacing: 3px;
+				color: black;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="banner">WELCOME TO MY HUMBLE PAGE</div>
+			<div class="subheader1"><a href="#">Link #</a></div>
+			<div class="subheader2"><a href="#">Link #</a></div>
+			<div class="subheader3"><a href="#">Link #</a></div>
+			<div class="subheader4"><a href="#">Link #</a></div>
+			<div class="menu">
+			<a href="#">Link #</a><br>
+			<a href="#">Link #</a><br>
+			<a href="#">Link #</a><br>
+				</div>
+			<div  class="content"><a>Lorem ipsum dolor sit amet, 
+			consectetur adipiscing elit. Etiam fermentum, augue 
+			ut commodo fringilla, massa urna dapibus libero, id 
+			ultrices mi magna sed tortor. In pulvinar, mauris eget
+			aliquet pharetra, lectus nisl pellentesque nisi, nec gravida 
+			nisi neque nec nibh. Aenean et sem nunc. Aliquam imperdiet 
+			nunc tellus, at pretium diam bibendum a. Nulla enim ligula, 
+			euismod eu dolor ut, ultrices hendrerit elit. Nam efficitur 
+			urna tortor, non porta neque volutpat vel. Quisque vel elementum 
+			justo. Cras maximus massa dictum, aliquet leo at, feugiat orci. 
+			Proin aliquam nisi non massa convallis, at pulvinar mi efficitur. 
+			Nunc ac sem vel nisl egestas porta nec in est. Fusce felis orci, tempus 
+			vitae rhoncus non, porta ut dolor. Proin sodales metus metus, at scelerisque 
+			sapien fringilla et. Nulla convallis nisi vitae nisi semper vestibulum. Nullam 
+			nec sapien massa. Ut viverra aliquet ex, a porta quam laoreet ut. Aliquam auctor 
+			augue nec vehicula porta.</a></div>
+			<div  class="footer">8</div>
+		</div>
+	</body>
+	
+</html>
